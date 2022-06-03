@@ -1,0 +1,43 @@
+body{
+				background-image: url("file:///storage/emulated/0/Pictures/Screenshot/Screenshot_20220326-100303.png");
+				background-repeat: no-repeat;
+				background-size: cover;
+}
+#bform{
+      text-align: center;
+	/*			background-color: black;*/
+				opacity: 70%;
+				padding: 30px;
+				margin: 30px;
+}
+input{
+				text-color: white;
+				border: none;
+				border-bottom: 3px solid white;
+				background: transparent;
+				
+}
+ h2{
+ 				color: gold;
+ 				align: center;
+ }
+ 
+button{
+				align: center;
+				background-color: #15fff5;
+				border: none;
+				height: 35px;
+				width: 85px;
+ }
+::placeholder{
+ 			color: #15fff5;
+ 				text-align: left;
+ 				padding: 4px;
+ 				background-color: white;
+ }
+ label{
+ 				color: gold;
+ }
+ p{
+ 				color: gold;
+ }
