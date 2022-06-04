@@ -1,0 +1,65 @@
+from tkinter import *
+def click():
+	sade=Tk()
+	sade.geometry("420x450")
+	ade=int(lab1.get())
+	ade*=1000
+	san=int(lab2.get())
+	san*=500
+	la=int(lab3.get())
+	la*=1000
+	ma=int(lab4.get())
+	ma*=1500
+	sal=ade+san+la+ma
+	Label(sade,text=sal).place(x=180,y=430)
+	ra=int(en.get()) -int(sal)
+	if int(ra) <0:
+		Label(window,text= "pls your money is not complete",font=("Days",10)).place(x=150,y=590)
+window=Tk()
+window.title("Buiding materials store")
+window.geometry("470x800")
+
+def new():
+	root=Tk()
+	root.geometry("430x420")
+lab=Label(window,text="Welcome To Our Buiding Materials Store.",font=("ArmWrestler",10)).pack()
+
+ade=Label(window, text="Pipe = 1000 ").place(x=20,y=50)
+
+ade=Label(window, text="Tap = 500 ").place(x=15,y=80)
+
+ade=Label(window, text="Gum = 1000 ").place(x=15,y=110)
+
+ade=Label(window, text="Filter= 1500").place(x=15,y=140)
+#input		
+lab=Label(window, text="input the number of Pipe ")
+lab.place(x=10,y=200)
+		
+lab=Label(window, text="input the number of Tap ")
+lab.place(x=10,y=240)
+lab=Label(window, text="input the number of Gum")
+lab.place(x=10,y=280)
+
+lab=Label(window, text="input the number of Filter ")
+lab.place(x=10,y=320)
+var=IntVar()
+lab1 = Entry (window,width=10)
+lab1.place(x=230,y=200)
+lab2 = Entry (window,width=10)
+lab2.place(x=230,y=240)
+lab3 = Entry (window,width=10)
+lab3.place(x=230,y=280)
+lab4 = Entry (window,width=10)
+lab4.place(x=230,y=320)
+s=Button(window,width=10,text="Check Total",command=click)
+s.place(x=200,y=380)
+ade=Label(window).place(x=200,y=350)
+en=Entry(window)
+en.place(x=200,y=480)
+la=Label(window,text= "make transfer").place(x=12,y=480)
+but=Button(window, text="prees for reciept",command=click).place(x=150,y=540)
+
+	
+sade=Button(window,text="click me",command=new)
+sade.place(x=14, y=600)
+window.mainloop()
